@@ -1,0 +1,140 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://cdn-media-0.freecodecamp.org/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#title{
+    position: absolute;
+    top: 0%;
+    left: 44%;
+    color: rgba(255, 255, 255, 90%);
+}
+
+.program{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+#description{
+    position: absolute;
+    top: 7%;
+    left: 41%;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 90%);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+label:last-of-type{
+    padding: 1em 0;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+
+
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html lang="en" >
+    <link rel="stylesheet" href="styles.css" />
+    <body>
+        <head>
+            <meta charset="utf'8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <h1 id="title">Survey form</h1>
+            <p id="description">Please, complete the required information.</p>
+        </head>
+
+        <div class="container">
+
+        <form required id="survey-form"><label for="name" id="name-label">Name:<input placeholder="Enter your name" value="" required id="name" type="text"></input></label>
+            <label id="email-label" for="email">Email: </label><input placeholder="Enter your email" value="" required id="email" type="email">
+            <label id="number-label" for="number">Age: <input placeholder="Age" value="" min="13" max="100" id="number" type="number"></label>
+            <label for="dropdown">How did you find us?<select id="dropdown">
+                <option id="">(select one)</option>
+                <option id="1">Facebook ads</option>
+                <option id="2">YouTube ads</option>
+                <option id="3">From a friend</option>
+            </select></label>
+            <label class="program" for="name">Select your program:
+                <input checked name="program" value="full-time" id="name" type="radio">Full time
+                <input name="program" value="part-time" id="name" type="radio">Part time</label></select>
+            
+            <label for="multiple">Select all that applies:
+                <input type="checkbox" value="multiple">Student
+                
+                <input class="option full" type="checkbox" value="multiple">Full time worker
+                
+                <input class="option part" type="checkbox" value="multiple">Part time worker
+                </label>
+
+            <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+        
+            <button id="submit" type="submit">Enviar</button>
+
+            </div>
+        </form>
+    </body>
+ </html>
